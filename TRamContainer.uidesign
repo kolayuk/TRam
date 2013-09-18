@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CTRamContainerView</property>
+    <compoundProperty id="location">
+      <property id="x">52</property>
+      <property id="y">45</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">TRamContainerView</property>
+    <compoundProperty id="size">
+      <property id="width">240</property>
+      <property id="height">320</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">20</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">204</property>
+        <property id="height">66</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">56</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_TRamContainerView_3</property>
+        <compoundProperty id="size">
+          <property id="width">148</property>
+          <property id="height">43</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">288</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_TRamContainerView_1</property>
+        <property id="rightText" type="i18n">STR_TRamContainerView_2</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">240</property>
+        <property id="height">32</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.CCoeControl">
+      <compoundProperty id="location">
+        <property id="y">66</property>
+      </compoundProperty>
+      <property id="className">CTRamContainer</property>
+      <property id="name">TRamContainer</property>
+      <compoundProperty id="size">
+        <property id="width">240</property>
+        <property id="height">222</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">120</property>
+        <property id="y">288</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size"/>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_Russian">
+      <string id="STR_TRamContainerView_1"/>
+      <string id="STR_TRamContainerView_2"/>
+      <string id="STR_TRamContainerView_3">TRamContainer</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="optionsMenu">r_tram_container_options_menu</resourceMapping>
+      <resourceMapping instanceName="title">r_tram_container_title_resource</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_tram_container_status_pane</resourceMapping>
+      <resourceMapping instanceName="TRamContainerView">r_tram_container_tram_container_view</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="TRamContainerView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ETRamContainerViewId</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>src/tramcontainer.cpp</file>
+    <file>inc/tramcontainer.h</file>
+    <file>src/tramcontainerview.cpp</file>
+    <file>inc/tramcontainerview.h</file>
+    <file>data/tram.rss</file>
+    <file>data/tramcontainer.rssi</file>
+    <file>data/tramcontainer.l16</file>
+    <file>data/tramcontainer.loc</file>
+  </generatedFiles>
+</designerData>

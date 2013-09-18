@@ -1,0 +1,18 @@
+/*
+========================================================================
+ Name        : TRamContainer.l16
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2010
+
+ Description : 
+========================================================================
+*/
+// localized strings for language: Russian (16)
+#define STR_TRamContainerView_1 ""
+#define STR_TRamContainerView_2 ""
+#define STR_TRamContainerView_3 "TRamContainer"

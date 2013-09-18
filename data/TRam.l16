@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : TRam.l16
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2010
+
+ Description : 
+========================================================================
+*/
+// localized strings for language: Russian (16)
+#define STR_TRamApplication_1 ""
+#define STR_TRamApplication_2 ""
+#define STR_TRamApplication_3 "TRam"
+#define STR_TRamApplication_4 "TRam"

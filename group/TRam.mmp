@@ -1,0 +1,47 @@
+
+TARGET			TRam.exe
+UID			   0x100039CE 0xEF5A9223
+VENDORID	  	  0
+TARGETTYPE		exe
+EPOCSTACKSIZE	 0x5000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc ..\data
+
+SOURCEPATH		..\data
+START RESOURCE	TRam.rss
+HEADER
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	TRam_reg.rss
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+START RESOURCE EF5A9223.rss
+END
+
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib
+LIBRARY			commonengine.lib efsrv.lib estor.lib eikcoctl.lib eikdlg.lib 
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib
+LIBRARY			ws32.lib bitgdi.lib apgrfx.lib aknskins.lib aknskinsrv.lib aknswallpaperutils.lib hal.lib flogger.lib
+LANG 				16
+
+START BITMAP	TRam.mbm
+HEADER
+TARGETPATH		\resource\apps
+SOURCEPATH		..\gfx
+SOURCE	c12,1	list_icon.bmp list_icon_mask.bmp
+END
+
+SOURCEPATH		..\src
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCE TRamContainer.cpp TRamContainerView.cpp TRamAppUi.cpp TRamDocument.cpp TRamApplication.cpp TopInfo.cpp FgrObserver.cpp
+
+CAPABILITY ReadDeviceData WriteDeviceData LocalServices UserEnvironment ReadUserData WriteUserData TrustedUI PowerMgmt ReadDeviceData WriteDeviceData ProtServ SwEvent NetworkServices Location SurroundingsDD

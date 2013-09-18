@@ -1,0 +1,17 @@
+/*
+========================================================================
+ Name        : TRam.loc
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2010
+
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_16
+#include "TRam.l16"
+#endif
